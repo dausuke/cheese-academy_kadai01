@@ -1,4 +1,5 @@
 # チーズアカデミーのwebサイト
+デプロイ先：https://dausuke.github.io/cheese-academy_kadai01/
 
 ## プロダクトの紹介
 - チーズアカデミーのWEBサイト
