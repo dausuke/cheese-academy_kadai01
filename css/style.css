@@ -1,0 +1,809 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/	
+
+/* 見出しアニメーション */
+	@keyframes transfrom1 {
+	0%{
+		transform: translate(-50%,260%) rotate(90deg);
+	}
+	100% {
+        transform: translate(0%,0%);
+    }
+	}	
+	@keyframes transfrom2 {
+	0%{
+		transform: translatey(260%) rotate(30deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom3 {
+	0%{
+		transform: translate(50%,260%) rotate(-90deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom4 {
+	0%{
+		transform: translate(20%,260%) rotate(45deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom5 {
+	0%{
+		transform: translate(-20%,260%) rotate(-45deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom6 {
+	0%{
+		transform: translate(40%,260%) rotate(70deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom7 {
+	0%{
+		transform: translate(-50%,260%) rotate(-65deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom8 {
+	0%{
+		transform: translatey(260%) rotate(55deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom9 {
+	0%{
+		transform: translatey(260%) rotate(120deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom10 {
+	0%{
+		transform: translate(-90%,260%) rotate(150deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom11 {
+	0%{
+		transform: translatey(260%) rotate(180deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom12 {
+	0%{
+		transform: translatey(260%) rotate(140deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom13 {
+	0%{
+		transform: translate(90%,260%) rotate(20deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfrom14 {
+	0%{
+		transform: translatey(260%) rotate(-150deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+
+	@keyframes transfromsub1 {
+	0%{
+		transform: translate(-50%,140%) rotate(90deg);
+	}
+	100% {
+        transform: translate(0%,0%);
+    }
+	}	
+	@keyframes transfromsub2 {
+	0%{
+		transform: translatey(140%) rotate(30deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub3 {
+	0%{
+		transform: translate(50%,140%) rotate(-90deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub4 {
+	0%{
+		transform: translate(20%,140%) rotate(45deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub5 {
+	0%{
+		transform: translate(-20%,140%) rotate(-45deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub6 {
+	0%{
+		transform: translate(40%,140%) rotate(70deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub7 {
+	0%{
+		transform: translate(-50%,140%) rotate(-65deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub8 {
+	0%{
+		transform: translatey(140%) rotate(55deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub9 {
+	0%{
+		transform: translatey(140%) rotate(120deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub10 {
+	0%{
+		transform: translate(-90%,140%) rotate(150deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub11 {
+	0%{
+		transform: translatey(140%) rotate(180deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub12 {
+	0%{
+		transform: translatey(140%) rotate(140deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub13 {
+	0%{
+		transform: translate(90%,140%) rotate(20deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	@keyframes transfromsub14 {
+	0%{
+		transform: translatey(140%) rotate(-150deg);
+	}
+	100% {
+		transform: translate(0%,0%);
+	}
+	}
+	
+	.main-title h1:nth-child(1){
+		animation: transfrom1 1.5s 2s both;
+	}
+	.main-title h1:nth-child(2){
+		animation: transfrom5 1.5s 3s both;
+	}
+	.main-title h1:nth-child(3){
+		animation: transfrom3 1.5s 4.2s both;
+	}
+	.main-title h1:nth-child(4){
+		animation: transfrom4 1.5s 3.4s both;
+	}
+	.main-title h1:nth-child(5){
+		animation: transfrom2 1.5s 2.8s both;
+	}
+	.main-title h1:nth-child(6){
+		animation: transfrom6 1.5s 3.8s both;
+	}
+	.main-title h1:nth-child(7){
+		animation: transfrom7 1.5s 3.2s both;
+	}
+	.main-title h1:nth-child(8){
+		animation: transfrom8 1.5s 4.6s both;
+	}	
+	.main-title h1:nth-child(9){
+		animation: transfrom10 1.5s 3.6s both;
+	}
+	.main-title h1:nth-child(10){
+		animation: transfrom11 1.5s 2.6s both;
+	}
+	.main-title h1:nth-child(11){
+		animation: transfrom9 1.5s 4s both;
+	}
+	.main-title h1:nth-child(12){
+		animation: transfrom14 1.5s 2.4s both;
+	}
+	.main-title h1:nth-child(13){
+		animation: transfrom12 1.5s 4.4s both;
+	}
+	.main-title h1:nth-child(14){
+		animation: transfrom13 1.5s 2.2s both;
+	}
+
+
+	.main-subtitle p:nth-child(1){
+		animation: transfromsub1 1.5s 2s both;
+	}
+	.main-subtitle p:nth-child(2){
+		animation: transfromsub13 1.5s 4.6s both;
+	}
+	.main-subtitle p:nth-child(3){
+		animation: transfromsub12 1.5s 2.8s both;
+	}
+	.main-subtitle p:nth-child(4){
+		animation: transfromsub14 1.5s 4.2s both;
+	}
+	.main-subtitle p:nth-child(5){
+		animation: transfromsub9 1.5s 3.8s both;
+	}
+	.main-subtitle p:nth-child(6){
+		animation: transfromsub11 1.5s 3s both;
+	}
+	.main-subtitle p:nth-child(7){
+		animation: transfromsub10 1.5s 4s both;
+	}
+	.main-subtitle p:nth-child(8){
+		animation: transfromsub8 1.5s 2.2s both;
+	}
+	.main-subtitle p:nth-child(9){
+		animation: transfromsub7 1.5s 3.2s both;
+	}
+	.main-subtitle p:nth-child(10){
+		animation: transfromsub6 1.5s 3.6s both;
+	}
+	.main-subtitle p:nth-child(11){
+		animation: transfromsub2 1.5s 2.8s both;
+	}
+	.main-subtitle p:nth-child(12){
+		animation: transfromsub4 1.5s 4.4s both;
+	}
+	.main-subtitle p:nth-child(13){
+		animation: transfromsub3 1.5s 2.4s both;
+	}
+	.main-subtitle p:nth-child(14){
+		animation: transfromsub5 1.5s 3.4s both;
+	}
+	.main-subtitle p:nth-child(15){
+		animation: transfromsub13 1.5s 2.4s both;
+	}
+	.main-subtitle p:nth-child(16){
+		animation: transfromsub12 1.5s 2s both;
+	}
+	.main-subtitle p:nth-child(17){
+		animation: transfromsub9 1.5s 4s both;
+	}
+	.main-subtitle p:nth-child(18){
+		animation: transfromsub10 1.5s 3.6s both;
+	}
+	.main-subtitle p:nth-child(19){
+		animation: transfromsub8 1.5s 2.6s both;
+	}
+	.main-subtitle p:nth-child(20){
+		animation: transfromsub7 1.5s 3.2s both;
+	}
+	.main-subtitle p:nth-child(21){
+		animation: transfromsub6 1.5s 4.4s both;
+	}
+	.main-subtitle p:nth-child(22){
+		animation: transfromsub2 1.5s 3.4s both;
+	}
+	.main-subtitle p:nth-child(23){
+		animation: transfromsub4 1.5s 2.6s both;
+	}
+	.main-subtitle p:nth-child(24){
+		animation: transfromsub3 1.5s 4.6s both;
+	}
+	.main-subtitle p:nth-child(25){
+		animation: transfromsub5 1.5s 2.2s both;
+	}
+	.main-subtitle p:nth-child(26){
+		animation: transfromsub1 1.5s 3s both;
+	}
+	
+/* メイン画像 */
+	h1{
+		display: inline-block;
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+	}
+	.main-subtitle p{
+		display:inline-block;
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+	}
+	
+	.main{
+		height: 500px;
+    	background:url(../img/mainbg.png);
+    	background-size: cover;
+    	background-position: center;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.main-title{
+		font-size:32px;
+		font-family: Arial;
+		font-weight: bold;
+		letter-spacing: -0.1em;
+		color: white;	
+  		text-shadow: 1px #000;
+		-webkit-text-stroke: 1px #000;
+
+	}
+	.main-subtitle{
+		letter-spacing: -0.1em;
+		font-size:48px;
+		font-family: Arial;
+  		font-weight: bold;
+		color: white;
+		line-height: 2.6em;
+		text-shadow: 1px #000;
+		-webkit-text-stroke: 1px #000;
+	}
+
+
+/* ナビゲーション */
+	@keyframes fadeIn-list {
+    	0% {
+			opacity:0;
+			 transform: translatey(-150%);
+    }100% {
+			opacity:1;
+			 transform: translatey(0%);
+    }
+	}	
+		.navigation{
+		border: 1px solid #efefef;
+		font-size: 21px;
+		height: 80px;
+		display: flex;
+		
+	}
+	.logo-img{
+		object-fit: cover;
+		width: 50%;
+		height: auto;
+		margin-left: 120px;
+	}
+	.navi-list{
+		width: 50%;
+		display: flex;
+		justify-content:space-around;
+		align-items: center;
+		
+	} 
+	.navi-list p:nth-child(1){
+		animation: fadeIn-list 1.5s 5s both;
+	}
+	.navi-list p:nth-child(2){
+		animation: fadeIn-list 1.5s 5.1s both;
+	}
+	.navi-list p:nth-child(3){
+		animation: fadeIn-list 1.5s 5.2s both;
+	}
+	.navi-list p:nth-child(4){
+		animation: fadeIn-list 1.5s 5.3s both;
+	}
+	.navi-list p:nth-child(5){
+		animation: fadeIn-list 1.5s 5.4s both;
+	}
+	
+
+	.navi-list a{
+		color: black;
+		
+	}
+	
+/* about */
+	#about.container{
+		margin: 120px;
+		text-align: center;
+	}
+	.about-title{
+		font-size: 24px;
+		color: #ffd61a;
+	}
+	.about-subtitle{
+		margin: 24px;
+	}
+	.about-text1{
+		margin: 40px;
+	}
+	.about-text3{
+		margin: 40px;
+	}
+	.about-text4{
+		margin-bottom: 80px;
+	}
+/* 画像アニメーション */
+	.loop-about{
+		display: flex;
+  		width: 100%;
+  		height: 300px;
+  		overflow: hidden;
+	}
+	.loop-about img{
+		width: auto;
+  		height: 100%;
+	}
+	@keyframes loop {
+  		0% {
+    		transform: translateX(100%);
+  		}
+  		100% {
+    		transform: translateX(-100%);
+  		}
+	}
+
+	@keyframes loop2 {
+  		0% {
+    		transform: translateX(0);
+  		}
+  		100% {
+   	 		transform: translateX(-200%);
+  		}
+	}
+	.loop-about img:first-child {
+  		animation: loop 40s -20s linear infinite;
+	}
+
+	.loop-about img:last-child {
+  		animation: loop2 40s linear infinite;
+	}
+	
+/* course */
+	#course.container{
+		margin-top: 64px;
+	}
+	.course-title{
+		font-size: 24px;
+		text-align: center;
+	}
+	.course-text{
+		margin-bottom: 64px;
+		text-align: center;
+	}
+	.course-box{
+		background-color: #fafafa;
+		display: flex;
+	}
+	.course-box-img{
+		width: 50%;
+	}
+	.course-box-imgfile{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	.course-box-content{
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+    	flex-direction: column;
+	}
+	.course-box-content-text1{
+		margin-left: 48px;
+		margin-right: 195px;
+	}
+	.course-box-content-text2{
+		margin-right: 48px;
+		margin-left: 195px;
+	}
+	.course-box-content-text3{
+		margin-left: 48px;
+		margin-right: 195px;
+	}
+/* news */
+	#news{
+		width: 960px;
+		margin: auto;
+	}
+	.news-title{
+		text-align: center;
+		margin-top: 64px;
+		margin-bottom: 48px;
+	}
+	.news-title h2{
+		color: #ffd61a;
+		font-size: 24px;
+	}
+	.news-box{
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.news-img{
+		margin: 16px;
+	}
+	.news-img-file{
+		width: 100%;
+		object-fit: cover;
+
+	}
+	.news-text{
+		margin: 16px;
+	}
+	.date{
+		margin-top: 32px;
+		margin-bottom: 24px;
+	}
+/* moreボタン */
+	.more{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.more-button {
+		font-size: 21px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+		height: 60px;  
+  		background: #ffd61a;
+  		color: #FFF;
+  		border-bottom: solid 4px #c2c3c4;
+		border-radius: 3px;
+		margin-top: 40px;
+		margin-bottom: 48px;
+	}
+	.more-button:active {
+  		transform: translateY(4px);
+  		border-bottom: none;
+	}
+/* access */
+	#access.container{
+		background-color: #fafafa;
+	}
+	.access-title h2{
+		text-align: center;
+		margin-top: 64px;
+		margin-bottom: 24px;
+	}
+	.access-title p{
+		margin-bottom: 64px;
+		text-align: center;
+	}
+	.access-map {
+  		position: relative;
+  		width: 100%;
+  		padding-top: 56.25%; 
+	}
+
+	iframe {
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		width: 100%;
+  		height: 90%;
+	}
+	.access-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 52px;	
+	}
+	.access-info{
+		width: 40%;
+		text-align: right;
+		line-height:40px;
+		margin-bottom: 80px;
+	}
+	.access-info p{
+		display: inline-block;
+		flex-direction: column;
+		text-align: left;
+	}
+	.access-info-text{
+		width: 60%;
+		margin-left: 48px;
+		line-height:40px;
+		margin-bottom: 80px;
+	}
+/* ここからcontact */
+	.contact-title{
+		text-align: center;
+		margin-top: 64px;
+		margin-bottom: 64px;
+	}
+	.contact-text{
+		text-align: center;
+	}
+	.contact-text2{
+		margin-top: 32px;
+		margin-bottom: 80px;
+	}
+/* お問い合わせフォーム */
+	form dl {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+	form dl dt {	
+		width: 232px;
+	}
+	.from-item{
+		border: 1px solid #bfbfbf;
+    	border-radius: 0.67em;
+    	background-color: snow;
+		width: 328px;
+		height: 36px;
+		margin-bottom: 24px;
+	}
+	textarea {
+		border: 1px solid #bfbfbf;
+    	border-radius: 0.67em;
+		background-color: snow;
+		width: 328px;
+		height: 108px;
+	}
+/* チェックボックス */
+	.from-checkbox{
+		margin-left: 56px;
+	}
+	.checkbox-list{
+		margin-bottom: 8px;
+		margin-top: 16px;
+		font-size: 14px;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		
+	}
+	.checkbox-item{
+		margin-bottom: 24px;
+	}
+	.checkbox-text{
+				vertical-align:top
+	}
+	.checkbox{
+		width: 24px;
+    	height: 24px;
+    	border: solid 1px #a0a0a0;
+    	border-radius: 25%;
+    	vertical-align: -2px;
+		background-color: #a0a0a0;
+		margin-right: 40px;
+	}
+/* 送信ボタン */
+	
+	.send{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.send-button {
+		font-size: 21px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+		height: 60px;  
+  		background: #ffd61a;
+  		color: #FFF;
+  		border-bottom: solid 4px #c2c3c4;
+		border-radius: 3px;
+		margin-top: 40px;
+		margin-bottom: 150px;
+	}
+	.send-button:active {
+  		transform: translateY(4px);
+  		border-bottom: none;
+	}
+/* フッター */
+	.footer{
+		color: white;
+		height: 72px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #707070;
+		font-size: 18px;
+	}
+/* ページトップボタン */
+	.top{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.top-button {
+		color: white;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;  
+  		text-decoration: none;
+  		background: #707070;
+	}
